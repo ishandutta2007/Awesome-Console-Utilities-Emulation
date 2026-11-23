@@ -44,47 +44,16 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Antstream Arcade](https://antstream.com)**  
-
-  Cloud retro gaming subscription platform streaming over 1,300 licensed arcade, PlayStation, SNES, Mega Drive, and classic computer titles with cloud saves and global leaderboards.
-
-
-
-- **[LaunchBox & Big Box (Cloud Games Database & Sync)](https://launchbox-app.com)**  
-
-  Feature-rich Windows/Android game launcher and emulation frontend backed by the cloud LaunchBox Games Database for automated box art, metadata scraping, and EmuMovies media sync.
-
-
-
-- **[NVIDIA GeForce NOW](https://nvidia.com)**  
-
-  Cloud gaming platform streaming owned PC and console-port libraries across living-room devices, smart TVs, Steam Decks, and browsers at up to 4K/120fps.
-
-
-
-- **[Shadow PC](https://shadow.tech)**  
-
-  Dedicated cloud Windows gaming PC service enabling users to run high-end PC and console emulators remotely on lightweight devices with full controller pass-through.
-
-
-
-- **[Plex Arcade (Legacy Cloud Streaming Service)](https://plex.tv)**  
-
-  Plex's cloud-integrated retro gaming feature (powered by Parsec and Atari) that streamed emulated console ROMs alongside personal media libraries.
-
-
-
-- **[RetroPie Cloud / Hosted Cloud Gaming VMs (Paperspace / AirGPU)](https://airgpu.com)**  
-
-  Cloud GPU virtual machine environments pre-configured for running RetroArch, LaunchBox, and shader-heavy console emulators remotely over Moonlight/Parsec.
-
-
-
-- **[PlayStation Plus Cloud Streaming & Xbox Cloud Gaming](https://playstation.com)**  
-
-  Official first-party console cloud platforms streaming classic PS1/PS2/PSP/PS3/PS5 and backward-compatible Xbox console catalogs directly to consoles, PCs, and handhelds.
+| Product / Platform | Company Valuation / Revenue | Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Xbox Cloud Gaming (Microsoft)](https://xbox.com/play)** | ~$3.6T Market Cap | Starting at $22.99/mo (Xbox Game Pass Ultimate) | Free tier available for select F2P titles (e.g. Fortnite) capped at 30 minutes per session with pre-roll ads; promotional 14-day trials occasionally offered | Official first-party console cloud streaming catalog enabling direct play of Xbox console and backward-compatible retro releases across TVs, PCs, handhelds, and mobile devices. |
+| **[NVIDIA GeForce NOW](https://nvidia.com/geforce-now)** | ~$3.0T Market Cap | Starting at $9.99/mo (Performance tier; $19.99/mo for Ultimate) | Free tier forever: limited to 60-minute continuous sessions, standard queue waiting times with up to 2-min video ads, basic rig specs (up to 1080p/60fps), and no ray tracing | Flagship cloud gaming service streaming owned PC and console-port titles to low-power devices, smart TVs, and handhelds with up to 4K/120fps capability. |
+| **[PlayStation Plus Cloud Streaming (Sony)](https://playstation.com/ps-plus)** | ~$159B Market Cap | Starting at $19.99/mo (PS Plus Premium; $159.99/yr) | No permanent free tier (free PSN account covers F2P games only); regional 7-day to 14-day free trials available for select new accounts requiring payment info | Sony's cloud streaming tier offering remote access to classic PS1, PS2, PSP, PS3, and modern PS4/PS5 console titles directly on PS5 consoles and Windows PCs. |
+| **[Plex (Plex Arcade / Pass)](https://plex.tv)** | ~$100M–$250M Est. Valuation (~$132M Raised) | Starting at $6.99/mo ($69.99/yr or $749.99 lifetime) | Free tier forever: free local home network media streaming and ad-supported AVOD channels; remote personal server streaming, hardware transcoding, and offline downloads require paid pass (mobile personal playback capped at 1-min preview without unlock) | Unified home media server and cloud platform featuring retro arcade streaming integration (powered by Parsec & Atari) alongside personal media streaming libraries. |
+| **[Shadow PC](https://shadow.tech)** | ~€29.5M Takeover Package (~$100M+ Raised prior) | Starting at $29.99/mo (Shadow PC Lite; $32.99–$37.99/mo for standard) | No free tier forever and no free trial (dedicated cloud GPU Windows VM infrastructure starts immediately on a paid monthly subscription) | Full high-performance cloud Windows virtual desktop service capable of running demanding PC and console emulators remotely on lightweight devices with full gamepad pass-through. |
+| **[Antstream Arcade](https://antstream.com)** | ~$20M–$30.8M Funding (~$7.7M Est. Revenue) | Starting at $3.99/mo ($39.99/yr) | Free tier forever: full access to 1,300+ retro games, challenges, and tournaments supported by video advertisements and daily gem recharge limits | Dedicated retro gaming cloud subscription platform streaming over 1,300 officially licensed arcade, PS1, SNES, Genesis, and classic home computer games with cloud saves. |
+| **[RetroPie Cloud / AirGPU](https://airgpu.com)** | Bootstrapped Micro-SaaS (Private) | Starting at $0.65/hour + $3.50/mo per 50GB SSD storage | No free tier and no free trial (pay-as-you-go hourly GPU compute billing with minimum initial credit deposit required) | On-demand cloud GPU virtual workstations configured to host and stream RetroArch, LaunchBox, and resource-intensive console emulators via Moonlight or Parsec. |
+| **[LaunchBox Games Database & Sync (Unbroken Software)](https://launchbox-app.com)** | Bootstrapped / Privately Held Independent | Starting at $30/yr ($75 lifetime forever-updates; $25 Android license) | Free tier forever: standard LaunchBox desktop organizer with unlimited game imports, scraping, and metadata sync; premium Big Box 10-foot TV/gamepad UI requires paid license | High-performance game launcher and emulator frontend ecosystem backed by cloud database scraping, box art syncing, and community metadata integration. |
 
 
 
