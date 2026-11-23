@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a071b"/>
+      <stop offset="50%" stop-color="#120d2f"/>
+      <stop offset="100%" stop-color="#05030e"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f857a6"/>
+      <stop offset="100%" stop-color="#ff5858"/>
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#a5f3fc"/>
+      <stop offset="80%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="22" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#231d4d" stroke-width="0.75" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .orb-pulse {
+      animation: pulse 6s ease-in-out infinite alternate;
+    }
+    .orb-float {
+      animation: float 8s ease-in-out infinite alternate;
+    }
+    .grid-pan {
+      animation: panGrid 20s linear infinite;
+    }
+    .pill-shimmer {
+      animation: shimmer 4s ease-in-out infinite alternate;
+    }
+    .wave-line {
+      stroke-dasharray: 8 6;
+      animation: dash 15s linear infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.35; }
+      100% { transform: scale(1.25); opacity: 0.65; }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-18px) translateX(12px); }
+      100% { transform: translateY(10px) translateX(-15px); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -200; }
+    }
+    @keyframes shimmer {
+      0% { opacity: 0.75; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1280" height="420" fill="url(#bg-grad)"/>
+
+  <!-- Perspective Cyber Grid in background -->
+  <rect width="1280" height="420" fill="url(#cyber-grid)" opacity="0.65"/>
+
+  <!-- Dynamic Glowing Ambient Orbs (Background depth - safely behind text) -->
+  <g class="orb-float" transform-origin="200 120">
+    <circle cx="180" cy="110" r="140" fill="#00f2fe" opacity="0.22" filter="url(#glow-cyan)" class="orb-pulse"/>
+  </g>
+  <g class="orb-float" transform-origin="1100 300">
+    <circle cx="1120" cy="290" r="180" fill="#c084fc" opacity="0.2" filter="url(#glow-purple)" class="orb-pulse"/>
+  </g>
+  <circle cx="640" cy="210" r="260" fill="#f43f5e" opacity="0.08" filter="url(#glow-purple)"/>
+
+  <!-- Animated Tech Accent Lines (Far sides/bottom, avoiding center foreground) -->
+  <path d="M 0 380 Q 320 330 640 370 T 1280 340" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.4" class="wave-line"/>
+  <path d="M 0 395 Q 400 360 800 390 T 1280 370" fill="none" stroke="#e879f9" stroke-width="1.5" opacity="0.35" class="wave-line"/>
+
+  <!-- Retro D-Pad & Action Buttons Schematic Decors (Left/Right margins) -->
+  <g opacity="0.25" transform="translate(60, 160)">
+    <!-- Retro Gamepad Icon Wireframe -->
+    <rect x="0" y="20" width="60" height="20" rx="4" fill="#00f2fe"/>
+    <rect x="20" y="0" width="20" height="60" rx="4" fill="#00f2fe"/>
+  </g>
+
+  <g opacity="0.25" transform="translate(1160, 160)">
+    <!-- Action Buttons Wireframe -->
+    <circle cx="30" cy="12" r="10" fill="#f43f5e"/>
+    <circle cx="12" cy="30" r="10" fill="#38bdf8"/>
+    <circle cx="48" cy="30" r="10" fill="#fbbf24"/>
+    <circle cx="30" cy="48" r="10" fill="#34d399"/>
+  </g>
+
+  <!-- FOREGROUND: Content Elements (Guaranteed crisp and unobstructed) -->
+  <g id="foreground-content">
+    <!-- Top Category Tag Pill -->
+    <g transform="translate(640, 68)">
+      <rect x="-170" y="-18" width="340" height="36" rx="18" fill="#1e184a" stroke="#818cf8" stroke-width="1.5" opacity="0.95"/>
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" letter-spacing="2.5">
+        🕹️ CONSOLE UTILITIES &amp; EMULATION
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="640" y="160" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="url(#title-grad)" letter-spacing="-0.5">
+      Awesome Console Utilities &amp; Emulation
+    </text>
+
+    <!-- Subtitle -->
+    <text x="640" y="210" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#cbd5e1" letter-spacing="0.2">
+      Curated List of Emulators, Gaming OS Distributions, Cloud Gaming &amp; Console Management
+    </text>
+
+    <!-- Feature Badges / Capability Pills (Horizontally Centered) -->
+    <g transform="translate(640, 280)" class="pill-shimmer">
+      <!-- Pill 1: Retro Gaming OS -->
+      <g transform="translate(-360, 0)">
+        <rect x="-85" y="-17" width="170" height="34" rx="17" fill="#181339" stroke="#38bdf8" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">
+          ⚡ Turnkey Linux OS
+        </text>
+      </g>
+
+      <!-- Pill 2: Emulation Cores -->
+      <g transform="translate(-180, 0)">
+        <rect x="-85" y="-17" width="170" height="34" rx="17" fill="#181339" stroke="#818cf8" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">
+          👾 Libretro Cores
+        </text>
+      </g>
+
+      <!-- Pill 3: Frontends & ROMs -->
+      <g transform="translate(0, 0)">
+        <rect x="-85" y="-17" width="170" height="34" rx="17" fill="#181339" stroke="#c084fc" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">
+          📺 Unified Frontends
+        </text>
+      </g>
+
+      <!-- Pill 4: Cloud Streaming -->
+      <g transform="translate(180, 0)">
+        <rect x="-85" y="-17" width="170" height="34" rx="17" fill="#181339" stroke="#f472b6" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">
+          ☁️ Cloud Gaming &amp; Sync
+        </text>
+      </g>
+
+      <!-- Pill 5: Console Modding -->
+      <g transform="translate(360, 0)">
+        <rect x="-85" y="-17" width="170" height="34" rx="17" fill="#181339" stroke="#34d399" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">
+          🎮 Console Utilities
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Metadata Tagline -->
+    <text x="640" y="348" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8" letter-spacing="1">
+      STEAM DECK &bull; RASPBERRY PI &bull; HANDHELDS &bull; PCS &bull; BROWSER RETRO
+    </text>
+  </g>
+</svg>
