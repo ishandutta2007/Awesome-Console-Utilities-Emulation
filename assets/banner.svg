@@ -175,7 +175,7 @@
 
     <!-- Bottom Metadata Tagline -->
     <text x="640" y="348" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8" letter-spacing="1">
-      STEAM DECK &bull; RASPBERRY PI &bull; HANDHELDS &bull; PCS &bull; BROWSER RETRO
+      STEAM DECK &#8226; RASPBERRY PI &#8226; HANDHELDS &#8226; PCS &#8226; BROWSER RETRO
     </text>
   </g>
 </svg>
