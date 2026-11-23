@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Console-Utilities-Emulation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Console-Utilities-Emulation?style=flat-square&logo=github" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Console-Utilities-Emulation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Console-Utilities-Emulation?style=flat-square&logo=github" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Console-Utilities-Emulation/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Console-Utilities-Emulation?style=flat-square&logo=github" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Console-Utilities-Emulation/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Console-Utilities-Emulation?style=flat-square&logo=github" alt="GitHub issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Console-Utilities-Emulation/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License" /></a>
@@ -69,7 +69,7 @@ Below is a curated comparison of hosted cloud gaming VMs, remote streaming porta
 
 ## 💻 Open-Source GitHub Projects
 
-Every open-source project below includes an official live GitHub stars badge (`style=social`, `color=white`) linking directly to that repository's stargazers page, strictly sorted in **descending order of star count**.
+Every open-source project below includes an official live GitHub_Stars_Badge (`style=social`, `color=white`) linking directly to that repository's stargazers page, strictly sorted in **descending order of Stars_Count**.
 
 ### 🏆 High-Impact Emulators & Frontends (Ranked by Stars)
 
@@ -174,7 +174,7 @@ Contributions are wholeheartedly welcome! Follow these steps to submit a project
 
 1. **Fork the Repository** on GitHub.
 2. **Add or Edit Entries** in [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Console-Utilities-Emulation/README.md) following the existing Markdown schema.
-3. **Include Key Data**: Platform name, verified link, official star badge (`style=social&color=white`), and a concise 1–2 sentence description.
+3. **Include Key Data**: Platform name, verified link, official Stars_Badge (`style=social&color=white`), and a concise 1–2 sentence description.
 4. **Submit a Pull Request** with a brief summary explaining the merit and relevance of the addition.
 
 ---
